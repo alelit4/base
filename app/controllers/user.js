@@ -45,7 +45,7 @@ exports.signup = function (req, res){
             var UserNew = new User({ username: req.body.username, password: pass});
             UserNew.save();
             //res.send(UserNew._id);
-            res.render("home");
+            res.render("login/home");
         }
     });
 }
