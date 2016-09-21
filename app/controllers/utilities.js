@@ -7,8 +7,8 @@ var mongoose = require('mongoose'),
 
 /* Home View */
 exports.index = function(req, res) {
-  res.render('home');
-  console.log(req.isAuthenticated());
+    res.render('home');
+    console.log(req.isAuthenticated());
 };
 
 /* Login View */
